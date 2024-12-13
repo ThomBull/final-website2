@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seventh Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="search-container">
+  <input type="text" id="search-bar" placeholder="Search here..." />
+</div>
+</header>
+
+<!-- Include the search script -->
+<script src="search.js"></script>
+
+  <main>
+    <h1 class="center">About me and sources</h1>
+    <br></br>
+    <div>
+      <p class="center">I have been flipping balisongs for nearly half of my life. I started when I was ten and have been flipping to this day at 18. balisongs are a huge part of my life, I do it every day witout even thinking about it, its not a hobby anymore but just a daily task I do like walking. I hope this wbsite convinced you to try out this wonderful hobby for yourself.</p>
+    </div>
+    <hr>
+    <div>
+      <p class="center">Sources: Me, I have been in this hobby again for nearly 10 years. If you have any more questions send me a message below.</p>
+    </div>
+  </main>
+
+<footer>
+    <div class="footer-buttons">
+        <a href="web5.html" class="button">About</a>
+    </div>
+    <div class="navigation">
+        <a href="web4.html" class="nav-arrow prev">⟵ Previous</a>
+        <input type="number" id="page-number" min="1" max="7" value="1" onchange="goToPage(event)" />
+        <a href="web1.html" class="nav-arrow next">Next ⟶</a>
+    </div>
+</footer>
+</body>
+
+<div class="feedback-container">
+    <input type="text" id="questionInput" placeholder="Feel free to ask questions." onkeydown="checkEnter(event)">
+</div>
+
+<!-- Include the feed script -->
+<script src="feed.js"></script>
+
+<!-- Popup for Thank You Message -->
+<div class="popup" id="popup" style="display: none;">
+    <div class="popup-contents">
+        <p>Thank you for your feedback! I will get back to you as soon as I can!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+
+
+

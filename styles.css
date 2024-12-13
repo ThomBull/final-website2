@@ -1,0 +1,340 @@
+/* General styling for all pages */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+/* Center and space images properly */
+img {
+    display: block;
+    margin: 20px auto;
+}
+
+img.washer {
+    height: 200px;
+    width: auto;
+    
+}
+
+img.bushing {
+    height: 200px;
+    width: auto;
+    
+}
+
+img.ball {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+button, a {
+    text-decoration: none;
+    color: white;
+}
+
+button, a:hover {
+    background-color: white; /* Invert colors on hover */
+  color: #000;
+}
+
+.balisong .bali {
+  display: flex;                /* Use flexbox for horizontal alignment */
+  justify-content: center;      /* Center the images horizontally */
+  align-items: center;          /* Align the images vertically (optional) */
+  gap: 10px;                    /* Add space between the images */
+}
+
+.balisong .bali img {
+                /* Set the height of each image to 200px */
+                    /* Maintain aspect ratio */
+  border: 2px solid black;      /* Optional: Add borders for visibility */
+  border-radius: 5px;           /* Optional: Add rounded corners */
+}
+
+img.handle {
+    width: 800px;
+    height: auto;
+}
+
+/* Ensure proper spacing between elements */
+.container {
+    margin-bottom: 40px;
+}
+
+/* Navigation styling (now centered in the footer) */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-arrow {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.page-number-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #444;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Footer left: Contact, About, Sources */
+.footer-left {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-left a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-left a:hover {
+    text-decoration: underline;
+}
+
+footer {
+  opacity: 0;                  /* Make the footer initially invisible */
+  transition: opacity 0.3s ease; /* Smoothly transition the opacity */
+}
+
+footer:hover {
+  opacity: 1;                  /* Make the footer visible on hover */
+}
+
+body {
+  margin-bottom: 50px;         /* Add margin to prevent content overlap with footer */
+}
+
+#p {
+    column-width: 540px;
+}
+
+#p2 {
+    column-width: 610px;
+}
+
+#p3 {
+    column-width: 650px;
+}
+
+/* Footer center: Navigation */
+.nav-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-arrow-footer {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+
+}
+
+#search-bar {
+    outline: none; /* Removes the default focus outline */
+    border: 1px solid white; /* White border for visibility */
+    background-color: black; /* Black background to match design */
+    color: white; /* White text for readability */
+    padding: 10px; /* Spacing inside the box */
+    width: 300px; /* Adjust the size as needed */
+    font-size: 16px; /* Text size */
+}
+
+#search-bar:focus {
+    border-color: cyan; /* Highlight when the user types */
+}
+
+
+#search-bar::placeholder {
+  color: #aaa; /* Light gray placeholder text */
+}
+
+
+/* Rising fade effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in effect to elements */
+h1, h2, p, img, .container {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* Prevent animation for fixed elements */
+.nav-container, footer, .search-bar {
+    animation: none;
+}
+
+/* Popup styling */
+.search-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
+}
+
+.popup-content h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.popup-content button {
+  margin: 10px; /* Spacing between buttons */
+}
+
+.close-popup {
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+}
+
+/* General button styling for all buttons */
+button {
+  background-color: #000; /* Black background */
+  color: white; /* White text */
+  border: 2px solid #fff; /* White border */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Padding for size */
+  font-family: Arial, sans-serif; /* Clean font */
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background-color: white; /* Invert colors on hover */
+  color: #000;
+}
+
+.footer-buttons {
+    color: white;
+}
+
+/* Target the video element */
+video {
+  width: 50%; /* Set the width to 30% of the screen */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 100%; /* Prevent the video from exceeding its original size */
+  display: block; /* Ensures proper alignment */
+  margin: 0 auto; /* Centers the video */
+}
+
+ .feedback-container {
+        text-align: center;
+        margin: 20px;
+    }
+
+    #questionInput {
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+        border-radius: 5px;
+        border: 2px solid white; /* White border around the input box */
+        background-color: black; /* Black background for the box */
+        color: white; /* White text inside the box */
+    }
+
+    #questionInput::placeholder {
+        color: white; /* White placeholder text */
+    }
+
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-contents {
+        background-color: black; /* Black background */
+        color: white; /* White text */
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    .popup-contents {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+    outline: 2px solid white; /* Add white outline */
+}
+
+
+    .popup-contents button {
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: red; /* Red background for the close button */
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .popup-contents button:hover {
+        background-color: darkred; /* Darker red on hover */
+    }

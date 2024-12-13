@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fifth Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="search-container">
+  <input type="text" id="search-bar" placeholder="Search here..." />
+</div>
+</header>
+
+<!-- Include the search script -->
+<script src="search.js"></script>
+
+  <main>
+    <h1 class="center">Balisong 101</h1>
+    <div id="video">
+    <video controls>
+      <source id="video1" src="balisong 101.mp4" type="video/webm">
+    </video>
+  </div>
+    <div class="image-row">
+      <p>This is a video from Willhersh, its the best video on youtube for getting into balisongs, it covers everything in this website except skill level and does a great job of it, I HIGHLY recomend you watch this video. Below are some links to fantastic youtubers that have informative videoes about all things balisong.</p>
+      <button><a href="https://www.youtube.com/@SquidIndustriesco"><img src="placeholder19.jpg" alt="Button 1"></a></button>
+      <button><a href="https://www.youtube.com/@WillHirsch"><img src="placeholder20.jpg" alt="Button 2"></a></button>
+      <button><a href="https://www.youtube.com/@BladeBias"><img src="placeholder21.jpg" alt="Button 3"></a></button>
+      <p>first button will take you to squid industries, second button will bring you to willhearsh the maker of the video above, the last link will take you to blade bias, a balisong review chanel.</p>
+    </div>
+  </main>
+
+<footer>
+    <div class="footer-buttons">
+        <a href="web5.html" class="button">About</a>
+    </div>
+    <div class="navigation">
+        <a href="web3.html" class="nav-arrow prev">⟵ Previous</a>
+        <input type="number" id="page-number" min="1" max="7" value="1" onchange="goToPage(event)" />
+        <a href="web5.html" class="nav-arrow next">Next ⟶</a>
+    </div>
+</footer>
+</body>
